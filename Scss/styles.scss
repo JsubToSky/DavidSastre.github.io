@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "NotoSerif";
+    src: url("../Assets/Fonts/static/NotoSerifDisplay/NotoSerifDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../Assets/Fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Abel";
+    src: url("../Assets/Fonts/Abel-Regular.ttf");
+}
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("../Assets/Fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face{
+    font-family: "SourceSansProBold";
+    src:url("../Assets/Fonts/SourceSansPro-Bold.ttf");
+}
+@font-face{
+    font-family: "SourceSansProItalic";
+    src:url("../Assets/Fonts/SourceSansPro-Italic.ttf");
+}
+@font-face{
+    font-family: "SourceSansProLight";
+    src:url("../Assets/Fonts/SourceSansPro-Light.ttf");
+} 
+@font-face {
+    font-family: "Solitreo";
+    src: url("../Assets/Fonts/Solitreo-Regular.ttf"); }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------- Css común -----------------------------------------------------*/
+
+.nav__navig{
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.nav .nav__marca{
+   color:rgb(247,245,246);
+   font-size:25;
+   text-transform:uppercase;
+   font-weight: 700;
+}
+
+.head{
+    background-image: url(../Assets/Images/banner_principal.jpg);
+    background-size: cover;
+    height: 85vh;
+    min-height:80vh;
+    position:relative;
+    color: rgb(247,245,246);
+    text-shadow: 2px 2px 2px rgb(29,29,27);
+}
+h1{
+    font-size:4rem;
+}
+.head__overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(29,29,27,0.2);
+}
+
+.social a{
+    margin:3px;
+}
+.divider{
+    margin: 5rem;
+}
+
+.carousel__objeto{
+    height:100vh;
+    min-height: 300px;
+}
+.carousel__texto{
+    bottom:220px;
+    z-index: 2;
+}
+
+.carousel__texto h5{
+    font-size:45px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-top:25px;
+}
+
+.carousel__texto p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height:1.9;
+}
+
+.carousel__interior::before{
+    content:'';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    z-index:1;
+
+}
+.cancion{
+    height: 100vh;
+}
+
+.img1{
+    width: 100%;
+    height:50%;
+    object-fit: contain;
+}
+
+.service .card-body i{
+    font-size:50px;
+}
+
+.team .card-body i{
+    font-size: 20px;
+}
+
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,15);
+}
+
+.img-fluid2{
+    object-fit:inherit;
+}
+
+.footer__ol{
+    text-decoration:none;
+}
+
+                                            /* page 2: nosotros */
+.h1-nos{
+    font-size:calc(4rem + 1.1vw);
+} 
+.title-hr{  
+    border: 1px solid black;
+}  
+.video-fluid{
+    object-fit: cover;
+}
+                                   /* -----------page 3: música -----------*/
+#video{
+    min-height: 100vh;
+    position:relative;
+}
+
+video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100vh;
+    min-height:80vh;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background: #1c1c1d;
+    opacity:0.35;
+    mix-blend-mode:overlay;
+}
+.head-3{
+    background-image: url(../Assets/Images/band-1.png);
+    background-size: cover;
+    height: 85vh;
+    min-height:80vh;
+    position:relative;
+    color: rgb(247,245,246);
+    text-shadow: 2px 2px 2px rgb(29,29,27);
+}
+
+/*-------------------------------------- css's listos para utilizar en clases------------------------------------*/
+.font-solitreo {
+    font-family: "Solitreo" ; }
+    
+.font-sanspro {
+    font-family: "SourceSansPro" ; }
+
+.font-sanspro-b{
+    font-family:"SourceSansProBold";
+}
+
+.font-sanspro-i{
+    font-family:"SourceSansProItalic";
+}
+
+.font-sanspro-l{
+    font-family:"SourceSansProLight";
+}
+.font-dancing{
+    font-family:"Dancing Script";
+}
+.font-noto{
+    font-family:"NotoSerif";
+}
+
+.bg-white-sp{
+    background-color: rgb(247,245,246);
+}
+
+.bg-black-sp{
+    background-color: rgb(29,29,27);
+}
+
+.bg-green-sp{
+    background-color: rgb(149,173,158);
+}
+
+.bg-beige-sp{
+    background-color: rgb(254,203,144);
+}
+
+.bg-yellow-sp{
+    background-color: rgb(253,236,178);
+}
+
+.color-white-sp{
+    color: rgb(247,245,246);
+}
+
+.color-black-sp{
+    color: rgb(29,29,27);
+}
+
+.color-green-sp{
+    color: rgb(149,173,158);
+}
+
+.color-beige-sp{
+    color: rgb(254,203,144);
+}
+
+.color-yellow-sp{
+    color: rgb(253,236,178);
+}
+.section-padding{
+    padding:100px 0;
+}
+.h-100{
+    height: 100%;
+}
+
+/*-----------------------------------------------------HOVER------------------------------------------------------*/
+.nav .navbar__marca:focus,
+.nav .navbar__marca:hover{
+    color:rgb(253,236,178);
+}
+.hvr-border-b {
+    border-bottom: 0; }
+  
+.hvr-border-b:hover {
+    border-bottom: 2px solid rgb(253,236,178);
+    padding-bottom: 0.3rem; 
+}
+.btn-green-sp {
+  color: rgb(247,245,246);
+  background-color: rgb(29,29,27);
+  border-color: rgb(253,236,178);
+}
+.btn-green-sp:hover {
+  color: #000;
+  background-color: rgb(149,173,158);
+  border-color: rgb(149,173,158);
+}
+
+/* --------------------------------------------------- RESPONSIVE-------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .carousel-caption {
+        bottom:370px;
+    }
+    .carousel-caption p{
+        width:100%;
+    }
+    .card{
+        margin-bottom: 30px;  
+    }
+    .img-area img{
+        width:100%
+    }
+    .about-text{
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align:center;
+    }
+    .carousel-caption{
+        bottom:125px;
+    }
+    .carousel-caption h5{
+        font-size:17px;
+    }
+    .carousel-caption a{
+        padding:10px 15px;
+    }
+    .carousel-caption p{
+        width:100%;
+        line-height:1.6;
+        font-size:12px;
+    }
+    .about-text{
+        padding-top:50px;
+    }
+    .card{
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:568px){
+    h1 {
+       font-size: 3rem;
+    }
+}
+/* ----------------RESPONSIVE-"NOSOTROS?"----------------- */
+@media only screen and (max-width:767px) {
+    .h1-nos{
+        font-size:calc(3rem + 3.1vw);
+        
+    }
+    .head__overlay{
+        display:flex;
+        align-items: center;
+        text-align: center; 
+        
+    }
+    .btn-x{
+        display:flex;
+        align-items: flex-end;
+    }
+    
+}
+/* ---------------RESPONSIVE-"MÚSICA" ------------------*/
+@media only screen and (max-width:568px){
+    .canciones__mus{
+        flex-direction: column-reverse;
+    }
+}

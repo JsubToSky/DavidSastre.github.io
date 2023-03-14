@@ -1,0 +1,24 @@
+{
+  "name": "su_presencia_worship",
+  "version": "1.0.0",
+  "description": "tercera pre entrega CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss Scss/styles.scss Css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "c/Programming Visual/Rehearsals/spw_page/repository-three"
+  },
+  "keywords": [
+    "first-try"
+  ],
+  "author": "Jasub Sastre",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
