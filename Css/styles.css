@@ -16,6 +16,10 @@
   src: url("../Assets/Fonts/SourceSansPro-Regular.ttf"); }
 
 @font-face {
+  font-family: "SourceSansProSB";
+  src: url("../Assets/Fonts/SourceSansPro-SemiBold.ttf"); }
+
+@font-face {
   font-family: "SourceSansProBold";
   src: url("../Assets/Fonts/SourceSansPro-Bold.ttf"); }
 
@@ -46,12 +50,13 @@
   color: #f7f5f6;
   font-size: 25;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-right: 0; }
 
 .head {
   background-image: url(../Assets/Images/banner_principal.jpg);
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   min-height: 80vh;
   position: relative;
   color: #f7f5f6;
@@ -64,7 +69,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 29, 27, 0.2); }
+  background-color: rgba(29, 29, 27, 0.28); }
 
 .social a {
   margin: 3px; }
@@ -105,11 +110,6 @@ h1 {
 .cancion {
   height: 100vh; }
 
-.img1 {
-  width: 100%;
-  height: 50%;
-  object-fit: contain; }
-
 .service .card-body i {
   font-size: 50px; }
 
@@ -121,9 +121,6 @@ h1 {
 
 .team .card {
   box-shadow: 15px 15px 40px black; }
-
-.img-fluid2 {
-  object-fit: inherit; }
 
 .footer__ol {
   text-decoration: none; }
@@ -158,12 +155,24 @@ video {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #1c1c1d;
+  background: #464646;
   opacity: 0.35;
   mix-blend-mode: overlay; }
 
 .head-3 {
   background-image: url(../Assets/Images/band-1.png);
+  background-size: cover;
+  height: 85vh;
+  min-height: 80vh;
+  position: relative;
+  color: #f7f5f6;
+  text-shadow: 2px 2px 2px #1d1d1b; }
+
+.head-5__imgs {
+  object-fit: cover; }
+
+.bobis {
+  background-image: url(../Assets/Images/church.png);
   background-size: cover;
   height: 85vh;
   min-height: 80vh;
@@ -180,6 +189,9 @@ video {
 
 .font-sanspro-b {
   font-family: "SourceSansProBold"; }
+
+.font-sanspro-sb {
+  font-family: "SourceSansProSB"; }
 
 .font-sanspro-i {
   font-family: "SourceSansProItalic"; }
@@ -238,7 +250,7 @@ video {
   border-bottom: 0; }
 
 .hvr-border-b:hover {
-  border-bottom: 2px solid #fdecb2;
+  border-bottom: 4px solid #fdecb2;
   padding-bottom: 0.3rem; }
 
 .btn-green-sp {
@@ -251,6 +263,12 @@ video {
   background-color: #95ad9e;
   border-color: #95ad9e; }
 
+.brand-hvr {
+  color: #f7f5f6; }
+
+.nav__marca:hover {
+  color: #fecb90; }
+
 /* --------------------------------------------------- RESPONSIVE-------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .carousel-caption {
@@ -262,7 +280,7 @@ video {
   .img-area img {
     width: 100%; }
   .about-text {
-    font-size: calc(1.275rem + 0.3vw); } }
+    font-size: calc(1.275rem + 0.5vw); } }
 
 @media only screen and (max-width: 767px) {
   .navbar-nav {
