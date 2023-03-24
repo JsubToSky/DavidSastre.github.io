@@ -1,3 +1,21 @@
+
+
+$color-negro-sp: rgb(29,29,27);
+$color-negro:#000;
+$color-negro-transparente:rgba(0,0,0,0.1);
+$color-blanco-sp: rgb(247,245,246);
+$color-verde-sp: rgb(149,173,158);
+$color-amarillo-sp: rgb(253,236,178);
+$color-beige-sp:rgb(254,203,144);
+$color-marron-sp:#ac664d;
+$color-gris-sp:rgb(86,70,70);
+$color-rojo-yt:rgb(255, 0, 0);
+$color-rosado-ig:rgb(250, 0, 104);
+$color-verde-sptf:rgb(0, 255, 0);
+
+$cover:cover;
+$cien-porciento:100%;
+
 @import "variables";
 @font-face {
     font-family: "NotoSerif";
@@ -48,7 +66,7 @@
 }
 
 .nav .nav__marca{
-   color:rgb(247,245,246);
+   color:$color-blanco-sp;
    font-size:25;
    text-transform:uppercase;
    font-weight: 700;
@@ -57,24 +75,23 @@
 
 .head{
     background-image: url(../Assets/Images/banner_principal.jpg);
-    background-size: cover;
+    background-size: $cover;
     height: 100vh;
     min-height:80vh;
     position:relative;
-    color: rgb(247,245,246);
-    text-shadow: 2px 2px 2px rgb(29,29,27);
-    height:100vh;
-    width:100%;
-    object-fit:cover; 
+    color: $color-blanco-sp;
+    text-shadow: 2px 2px 2px $color-negro-sp;
+    width:$cien-porciento;
+    object-fit:$cover; 
 }
 h1{
     font-size:4rem;
 }
-.head__overlay{
+.overlay{
     position:absolute;
-    width:100%;
-    height:100%;
-    background-color: rgba(29,29,27,0.28);
+    width:$cien-porciento;
+    height:$cien-porciento;
+    background-color:$color-negro-transparente;
 }
 .social{
     position:fixed;
@@ -83,8 +100,10 @@ h1{
     z-index:4;
     background-color: rgb(255, 81, 81);
 }
-.social a{
-    margin:3px;
+.social{
+    a{
+        margin:3px;
+    }
 }
 .divider{
     margin: 5rem;
@@ -92,53 +111,52 @@ h1{
 
 .carrusel__objeto{
     height:100vh;
-    min-height: 300px;
+    min-height: 300px; 
 }
 .carrusel__img{
-    height:100%;
-    width:100%;
-    object-fit:cover;
+    height:$cien-porciento;
+    width:$cien-porciento;
+    object-fit:$cover;
 }
 .carrusel__texto{
     bottom:220px;
     z-index: 2;
 }
 
-.carrusel__texto h5{
-    font-size:45px; 
-    text-transform:uppercase;
-    /*letter-spacing:2px; */
-    margin-top:25px; 
+.carrusel__texto{
+    h5{
+        font-size:45px; 
+        text-transform:uppercase;
+        /*letter-spacing:2px; */
+        margin-top:25px;
+    }  
 }
 
-.carrusel__texto p{
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height:1.9;
+.carrusel__texto {
+    p{
+        width: 60%;
+        margin: auto;
+        font-size: 18px;
+        line-height:1.9;
+    }
 }
 
 .carrusel__interior::before{
     content:'';
     position: absolute;
-    width: 100%; 
-    height:100%;
+    width: $cien-porciento; 
+    height:$cien-porciento;
     top:0;
     left:0;
-    background: rgba(0,0,0,0.1);
+    background: $color-negro-transparente;
     z-index:1;
 
 }
 .carrusel-2__img{
-    height:100%;
-    width:100%;
-    object-fit:cover; 
+    height:$cien-porciento;
+    width:$cien-porciento;
+    object-fit:$cover; 
 }
-.cancion{
-    height: 100vh;
-}
-
-
 .service .card-body i{
     font-size:50px;
 }
@@ -163,26 +181,23 @@ h1{
 
 .head-nos{
     background-image:url(../Assets/Images/fiesta-outside.png);
-    background-size: cover;
+    background-size: $cover;
     height: 85vh;
     min-height:80vh;
     position:relative; 
-    color: rgb(247,245,246);
-    text-shadow: 2px 2px 2px rgb(29,29,27);
+    color: $color-blanco-sp;
+    text-shadow: 2px 2px 2px $color-negro-sp;
 }
 .h1-nos{
     font-size:calc(4rem + 1.1vw);
 } 
 .title-hr{  
-    border: 1px solid black;
+    border: 1px solid $color-negro;
 }  
-.video-fluid{
-    object-fit: cover;
-}
 .story{
     background-image: url("../Assets/Images/100-Iglesia-2.jpg");
-    background-size: cover;
-    height: 100%;
+    background-size: $cover;
+    height: $cien-porciento;
     min-height:80vh;
     position:relative; 
     .container{
@@ -211,43 +226,39 @@ video{
     position:absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width:$cien-porciento;
     height:100vh;
     min-height:80vh;
-    object-fit: cover;
+    object-fit: $cover;
 }
 
 .capa{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: $cien-porciento;
     height:100vh;
-    background: rgb(70, 70, 70);
+    background: $color-negro-transparente;
     opacity:0.35;
     mix-blend-mode:overlay;
 } 
 .head-3{
     background-image: url(../Assets/Images/band-1.png);
-    background-size: cover;
+    background-size: $cover;
     height: 85vh;
     min-height:80vh;
     position:relative;
-    color: rgb(247,245,246);
-    text-shadow: 2px 2px 2px rgb(29,29,27);
+    color: $color-blanco-sp;
+    text-shadow: 2px 2px 2px $color-negro-sp;
 }
 
-.head-5__imgs{
-    object-fit: cover;
-}
-
-.bobis{
+.bg-img-pag-5{
     background-image: url(../Assets/Images/church.png);
-    background-size: cover;
+    background-size: $cover;
     height: 85vh;
     min-height:80vh;
     position:relative;
-    color: rgb(247,245,246);
+    color: $color-blanco-sp;
 }
 
 .adn-section{
@@ -294,69 +305,67 @@ video{
     font-family:"Abel";
 }
 .border-stroke-w{
-    -webkit-text-stroke: 1px rgb(247,245,246);
+    -webkit-text-stroke: 1px $color-blanco-sp;
 }
 .border-brown-sp{
-    border: 3px solid #ac664d;
-    border-color: #ac664d;
+    border: 3px solid $color-marron-sp;
+    border-color: $color-marron-sp;
 }
 .bg-white-sp{
-    background-color: rgb(247,245,246);
+    background-color:$color-blanco-sp;
 }
 
 .bg-black-sp{
-    background-color: rgb(29,29,27);
+    background-color: $color-negro-sp;
 }
-.bg-black-nigger{
-    background-color: #131313;
-}
-.bg-green-sp{
-    background-color: rgb(149,173,158);
+
+.bg-green-sp {
+    background-color:$color-verde-sp;
 }
 
 .bg-beige-sp{
-    background-color: rgb(254,203,144);
+    background-color: $color-beige-sp;
 }
 
 .bg-yellow-sp{
-    background-color: rgb(253,236,178);
+    background-color:$color-amarillo-sp;
 }
 .bg-brown-sp{
-    background-color: #ac664d;
+    background-color: $color-marron-sp;
 }
 .bg-grey-sp{
-    background-color: rgb(86,70,70);
+    background-color: $color-gris-sp;
 }
 .color-white-sp{
-    color: rgb(247,245,246);
+    color: $color-blanco-sp;
 }
 
 .color-black-sp{
-    color: rgb(29,29,27);
+    color: $color-negro-sp;
 }
 
 .color-green-sp{
-    color: rgb(149,173,158);
+    color: $color-verde-sp;
 }
 
 .color-beige-sp{
-    color: rgb(254,203,144);
+    color: $color-beige-sp;
 }
 
 .color-yellow-sp{
-    color: rgb(253,236,178);
+    color: $color-amarillo-sp;
 }
 .color-brown-sp{
-    color: #ac664d;
+    color: $color-marron-sp;
 }
 .color-red-yt{
-    color:red;
+    color:$color-rojo-yt;
 }
 .color-pink-ig{
-    color:rgb(250, 0, 104);
+    color:$color-rosado-ig;
 }
 .color-green-sptf{
-    color:rgb(0, 255, 0);
+    color:$color-verde-sptf;
 }
 .section-padding{
     padding:100px 0;
@@ -369,7 +378,7 @@ video{
 }
 
 .fit-cover{
-    object-fit: cover;
+    object-fit: $cover;
 }
 .fit-contain{
     object-fit: contain;
@@ -378,64 +387,68 @@ video{
 /*-----------------------------------------------------HOVER------------------------------------------------------*/
 .nav .navbar__marca:focus,
 .nav .navbar__marca:hover{
-    color:rgb(253,236,178);
+    color:$color-amarillo-sp;
 }
 .hvr-border-b {
     border-bottom: 0; }
   
 .hvr-border-b:hover {
-    border-bottom: 4px solid rgb(253,236,178);
+    border-bottom: 4px solid $color-amarillo-sp;
     padding-bottom: 0.3rem; 
 }
 .btn-green-sp {
-  color: rgb(247,245,246);
-  background-color: rgb(149,173,158);
-  border-color: rgb(149,173,158);
+  color: $color-blanco-sp;
+  background-color: $color-verde-sp;
+  border-color: $color-verde-sp;
 }
 .btn-green-sp:hover {
-  color: #000;
-  background-color: rgb(247,245,246);    
-  border-color: rgb(247,245,246);
+  color: $color-negro;
+  background-color: $color-blanco-sp;    
+  border-color: $color-blanco-sp;
 }
 .btn-grey-sp {
-    color: rgb(247,245,246);
-    background-color: rgb(86,70,70);
-    border-color: rgb(86,70,70);
+    color: $color-blanco-sp;
+    background-color: $color-gris-sp;
+    border-color: $color-gris-sp;
   }
 .btn-grey-sp:hover {
-    color: #000;
-    background-color: #ac664d;    
-    border-color: #ac664d;
+    color: $color-negro;
+    background-color: $color-marron-sp;    
+    border-color: $color-marron-sp;
   }
 .btn-yellow-sp{
-    color:rgb(29,29,27);
-    background-color: rgb(253,236,178);
-    border-color:rgb(253,236,178);
+    color:$color-negro-sp;
+    background-color: $color-amarillo-sp;
+    border-color:$color-amarillo-sp;
 }
 .btn-yellow-sp:hover{
     background-color:#E5C568;
     border-color:#E5C568;
 }
 .btn-beige-sp{
-    color:#000;
-    background-color: rgb(254,203,144);
-    border-color: rgb(253,236,178);
+    color:$color-negro;
+    background-color: $color-beige-sp;
+    border-color: $color-amarillo-sp;
+}
+.btn-beige-sp:hover{
+    background-color:#E5C568;
+    border-color:#E5C568;
 }
 .btn-black-sp {
-    color: rgb(247,245,246);
-    background-color: rgb(29,29,27);
-    border-color: rgb(29,29,27);
+    color: $color-blanco-sp;
+    background-color: $color-negro-sp;
+    border-color: $color-negro-sp;
   }
 .btn-black-sp:hover {
-    color: #000;
-    background-color: rgb(247,245,246);    
-    border-color: rgb(247,245,246);
+    color: $color-negro;
+    background-color: $color-blanco-sp;    
+    border-color: $color-blanco-sp;
   }
 .brand-hvr{
-    color: rgb(247,245,246);
+    color: $color-blanco-sp;
 }
 .nav__marca:hover{
-    color: rgb(254,203,144);
+    color: $color-beige-sp;
 }
 
 /* --------------------------------------------------- RESPONSIVE-------------------------------------------------*/
@@ -445,13 +458,13 @@ video{
         bottom:370px;
     }
     .carousel-caption p{
-        width:100%;
+        width:$cien-porciento;
     }
     .card{
         margin-bottom: 30px;  
     }
     .img-area img{
-        width:100%
+        width:$cien-porciento;
     }
     .about-text{
         font-size: calc(1.275rem + 0.5vw);
@@ -482,7 +495,7 @@ video{
         padding:10px 15px;
     }
     .carousel-caption p{
-        width:100%;
+        width:$cien-porciento;
         line-height:1.6;
         font-size:12px;
     }
@@ -504,7 +517,7 @@ video{
         font-size:calc(3rem + 3.1vw);
         
     }
-    .head__overlay{
+    .overlay{
         display:flex;
         align-items: center;
         text-align: center; 
