@@ -89,9 +89,6 @@ h1{
 .divider{
     margin: 5rem;
 }
-.about__img{
-    object-fit: cover;
-}
 
 .carrusel__objeto{
     height:100vh;
@@ -161,7 +158,18 @@ h1{
     text-decoration:none;
 }
 
-                                            /* page 2: nosotros */
+ /*--------------------------------- page 2: nosotros */
+
+
+.head-nos{
+    background-image:url(../Assets/Images/fiesta-outside.png);
+    background-size: cover;
+    height: 85vh;
+    min-height:80vh;
+    position:relative; 
+    color: rgb(247,245,246);
+    text-shadow: 2px 2px 2px rgb(29,29,27);
+}
 .h1-nos{
     font-size:calc(4rem + 1.1vw);
 } 
@@ -170,6 +178,28 @@ h1{
 }  
 .video-fluid{
     object-fit: cover;
+}
+.story{
+    background-image: url("../Assets/Images/100-Iglesia-2.jpg");
+    background-size: cover;
+    height: 100%;
+    min-height:80vh;
+    position:relative; 
+    .container{
+        .about-text{
+            .story__text-1{
+                background-color:rgba(29,29,27,0.6);
+            }
+        }
+        .row{
+            .about-text{
+                .story__text-2{
+                    background-color:rgba(29,29,27,0.6);
+                }
+            }
+        }
+    }
+    
 }
                                    /* -----------page 3: música -----------*/
 #video{
@@ -260,11 +290,16 @@ video{
 .font-noto{
     font-family:"NotoSerif";
 }
-
-.text-border-w{
+.font-abel{
+    font-family:"Abel";
+}
+.border-stroke-w{
     -webkit-text-stroke: 1px rgb(247,245,246);
 }
-
+.border-brown-sp{
+    border: 3px solid #ac664d;
+    border-color: #ac664d;
+}
 .bg-white-sp{
     background-color: rgb(247,245,246);
 }
@@ -312,9 +347,17 @@ video{
     color: rgb(253,236,178);
 }
 .color-brown-sp{
-    color: rgb(86,70,70);
+    color: #ac664d;
 }
-
+.color-red-yt{
+    color:red;
+}
+.color-pink-ig{
+    color:rgb(250, 0, 104);
+}
+.color-green-sptf{
+    color:rgb(0, 255, 0);
+}
 .section-padding{
     padding:100px 0;
 }
@@ -324,6 +367,14 @@ video{
 .fs-b-1{
     font-size: calc(1.725rem + 1.8vw);
 }
+
+.fit-cover{
+    object-fit: cover;
+}
+.fit-contain{
+    object-fit: contain;
+}
+
 /*-----------------------------------------------------HOVER------------------------------------------------------*/
 .nav .navbar__marca:focus,
 .nav .navbar__marca:hover{
