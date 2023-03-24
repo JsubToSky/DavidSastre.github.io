@@ -1,3 +1,4 @@
+@import "variables";
 @font-face {
     font-family: "NotoSerif";
     src: url("../Assets/Fonts/static/NotoSerifDisplay/NotoSerifDisplay-Regular.ttf");
@@ -62,6 +63,9 @@
     position:relative;
     color: rgb(247,245,246);
     text-shadow: 2px 2px 2px rgb(29,29,27);
+    height:100vh;
+    width:100%;
+    object-fit:cover; 
 }
 h1{
     font-size:4rem;
@@ -72,47 +76,66 @@ h1{
     height:100%;
     background-color: rgba(29,29,27,0.28);
 }
-
+.social{
+    position:fixed;
+    bottom: 15px;
+    left:15px;
+    z-index:4;
+    background-color: rgb(255, 81, 81);
+}
 .social a{
     margin:3px;
 }
 .divider{
     margin: 5rem;
 }
+.about__img{
+    object-fit: cover;
+}
 
-.carousel__objeto{
+.carrusel__objeto{
     height:100vh;
     min-height: 300px;
 }
-.carousel__texto{
+.carrusel__img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.carrusel__texto{
     bottom:220px;
     z-index: 2;
 }
 
-.carousel__texto h5{
-    font-size:45px;
+.carrusel__texto h5{
+    font-size:45px; 
     text-transform:uppercase;
-    letter-spacing:2px;
-    margin-top:25px;
+    /*letter-spacing:2px; */
+    margin-top:25px; 
 }
 
-.carousel__texto p{
+.carrusel__texto p{
     width: 60%;
     margin: auto;
     font-size: 18px;
     line-height:1.9;
 }
 
-.carousel__interior::before{
+.carrusel__interior::before{
     content:'';
     position: absolute;
     width: 100%; 
     height:100%;
     top:0;
     left:0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.1);
     z-index:1;
 
+}
+.carrusel-2__img{
+    height:100%;
+    width:100%;
+    object-fit:cover; 
 }
 .cancion{
     height: 100vh;
@@ -195,7 +218,20 @@ video{
     min-height:80vh;
     position:relative;
     color: rgb(247,245,246);
-    text-shadow: 2px 2px 2px rgb(29,29,27);
+}
+
+.adn-section{
+    width: 75%;
+}
+.video-5{
+    min-width:80vw;
+    min-width:30vw;
+    min-height:80vh;
+}
+.oli{
+    display:block;
+    width:90vw;
+    min-width:90vw;
 }
 /*-------------------------------------- css's listos para utilizar en clases------------------------------------*/
 .font-solitreo {
@@ -225,6 +261,10 @@ video{
     font-family:"NotoSerif";
 }
 
+.text-border-w{
+    -webkit-text-stroke: 1px rgb(247,245,246);
+}
+
 .bg-white-sp{
     background-color: rgb(247,245,246);
 }
@@ -232,7 +272,9 @@ video{
 .bg-black-sp{
     background-color: rgb(29,29,27);
 }
-
+.bg-black-nigger{
+    background-color: #131313;
+}
 .bg-green-sp{
     background-color: rgb(149,173,158);
 }
@@ -244,7 +286,12 @@ video{
 .bg-yellow-sp{
     background-color: rgb(253,236,178);
 }
-
+.bg-brown-sp{
+    background-color: #ac664d;
+}
+.bg-grey-sp{
+    background-color: rgb(86,70,70);
+}
 .color-white-sp{
     color: rgb(247,245,246);
 }
@@ -264,13 +311,19 @@ video{
 .color-yellow-sp{
     color: rgb(253,236,178);
 }
+.color-brown-sp{
+    color: rgb(86,70,70);
+}
+
 .section-padding{
     padding:100px 0;
 }
-.h-100{
-    height: 100%;
+.fs-b{
+    font-size: calc(1.825rem + 2vw);
 }
-
+.fs-b-1{
+    font-size: calc(1.725rem + 1.8vw);
+}
 /*-----------------------------------------------------HOVER------------------------------------------------------*/
 .nav .navbar__marca:focus,
 .nav .navbar__marca:hover{
@@ -285,14 +338,48 @@ video{
 }
 .btn-green-sp {
   color: rgb(247,245,246);
-  background-color: rgb(29,29,27);
-  border-color: rgb(253,236,178);
-}
-.btn-green-sp:hover {
-  color: #000;
   background-color: rgb(149,173,158);
   border-color: rgb(149,173,158);
 }
+.btn-green-sp:hover {
+  color: #000;
+  background-color: rgb(247,245,246);    
+  border-color: rgb(247,245,246);
+}
+.btn-grey-sp {
+    color: rgb(247,245,246);
+    background-color: rgb(86,70,70);
+    border-color: rgb(86,70,70);
+  }
+.btn-grey-sp:hover {
+    color: #000;
+    background-color: #ac664d;    
+    border-color: #ac664d;
+  }
+.btn-yellow-sp{
+    color:rgb(29,29,27);
+    background-color: rgb(253,236,178);
+    border-color:rgb(253,236,178);
+}
+.btn-yellow-sp:hover{
+    background-color:#E5C568;
+    border-color:#E5C568;
+}
+.btn-beige-sp{
+    color:#000;
+    background-color: rgb(254,203,144);
+    border-color: rgb(253,236,178);
+}
+.btn-black-sp {
+    color: rgb(247,245,246);
+    background-color: rgb(29,29,27);
+    border-color: rgb(29,29,27);
+  }
+.btn-black-sp:hover {
+    color: #000;
+    background-color: rgb(247,245,246);    
+    border-color: rgb(247,245,246);
+  }
 .brand-hvr{
     color: rgb(247,245,246);
 }
@@ -317,6 +404,16 @@ video{
     }
     .about-text{
         font-size: calc(1.275rem + 0.5vw);
+    }
+}
+@media only screen and (max-width:990px){
+    .carrusel{
+        display:none; 
+    }
+}
+@media only screen and (min-width:991px){
+    .carrusel-2{
+        display:none;
     }
 }
 
@@ -372,5 +469,11 @@ video{
 @media only screen and (max-width:568px){
     .canciones__mus{
         flex-direction: column-reverse;
+    }
+}
+/* ---------------RESPONSIVE-"IGLESIA"-------------------*/
+@media only screen and (max-width:568px){
+    .video-5{
+        height:30vh;
     }
 }

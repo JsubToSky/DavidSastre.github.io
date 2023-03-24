@@ -60,7 +60,10 @@
   min-height: 80vh;
   position: relative;
   color: #f7f5f6;
-  text-shadow: 2px 2px 2px #1d1d1b; }
+  text-shadow: 2px 2px 2px #1d1d1b;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover; }
 
 h1 {
   font-size: 4rem; }
@@ -71,41 +74,61 @@ h1 {
   height: 100%;
   background-color: rgba(29, 29, 27, 0.28); }
 
+.social {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 4;
+  background-color: #ff5151; }
+
 .social a {
   margin: 3px; }
 
 .divider {
   margin: 5rem; }
 
-.carousel__objeto {
+.about__img {
+  object-fit: cover; }
+
+.carrusel__objeto {
   height: 100vh;
   min-height: 300px; }
 
-.carousel__texto {
+.carrusel__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.carrusel__texto {
   bottom: 220px;
   z-index: 2; }
 
-.carousel__texto h5 {
+.carrusel__texto h5 {
   font-size: 45px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /*letter-spacing:2px; */
   margin-top: 25px; }
 
-.carousel__texto p {
+.carrusel__texto p {
   width: 60%;
   margin: auto;
   font-size: 18px;
   line-height: 1.9; }
 
-.carousel__interior::before {
+.carrusel__interior::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   z-index: 1; }
+
+.carrusel-2__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
 
 .cancion {
   height: 100vh; }
@@ -177,8 +200,20 @@ video {
   height: 85vh;
   min-height: 80vh;
   position: relative;
-  color: #f7f5f6;
-  text-shadow: 2px 2px 2px #1d1d1b; }
+  color: #f7f5f6; }
+
+.adn-section {
+  width: 75%; }
+
+.video-5 {
+  min-width: 80vw;
+  min-width: 30vw;
+  min-height: 80vh; }
+
+.oli {
+  display: block;
+  width: 90vw;
+  min-width: 90vw; }
 
 /*-------------------------------------- css's listos para utilizar en clases------------------------------------*/
 .font-solitreo {
@@ -205,11 +240,17 @@ video {
 .font-noto {
   font-family: "NotoSerif"; }
 
+.text-border-w {
+  -webkit-text-stroke: 1px #f7f5f6; }
+
 .bg-white-sp {
   background-color: #f7f5f6; }
 
 .bg-black-sp {
   background-color: #1d1d1b; }
+
+.bg-black-nigger {
+  background-color: #131313; }
 
 .bg-green-sp {
   background-color: #95ad9e; }
@@ -219,6 +260,12 @@ video {
 
 .bg-yellow-sp {
   background-color: #fdecb2; }
+
+.bg-brown-sp {
+  background-color: #ac664d; }
+
+.bg-grey-sp {
+  background-color: #564646; }
 
 .color-white-sp {
   color: #f7f5f6; }
@@ -235,11 +282,17 @@ video {
 .color-yellow-sp {
   color: #fdecb2; }
 
+.color-brown-sp {
+  color: #564646; }
+
 .section-padding {
   padding: 100px 0; }
 
-.h-100 {
-  height: 100%; }
+.fs-b {
+  font-size: calc(1.825rem + 2vw); }
+
+.fs-b-1 {
+  font-size: calc(1.725rem + 1.8vw); }
 
 /*-----------------------------------------------------HOVER------------------------------------------------------*/
 .nav .navbar__marca:focus,
@@ -255,13 +308,47 @@ video {
 
 .btn-green-sp {
   color: #f7f5f6;
-  background-color: #1d1d1b;
-  border-color: #fdecb2; }
+  background-color: #95ad9e;
+  border-color: #95ad9e; }
 
 .btn-green-sp:hover {
   color: #000;
-  background-color: #95ad9e;
-  border-color: #95ad9e; }
+  background-color: #f7f5f6;
+  border-color: #f7f5f6; }
+
+.btn-grey-sp {
+  color: #f7f5f6;
+  background-color: #564646;
+  border-color: #564646; }
+
+.btn-grey-sp:hover {
+  color: #000;
+  background-color: #ac664d;
+  border-color: #ac664d; }
+
+.btn-yellow-sp {
+  color: #1d1d1b;
+  background-color: #fdecb2;
+  border-color: #fdecb2; }
+
+.btn-yellow-sp:hover {
+  background-color: #E5C568;
+  border-color: #E5C568; }
+
+.btn-beige-sp {
+  color: #000;
+  background-color: #fecb90;
+  border-color: #fdecb2; }
+
+.btn-black-sp {
+  color: #f7f5f6;
+  background-color: #1d1d1b;
+  border-color: #1d1d1b; }
+
+.btn-black-sp:hover {
+  color: #000;
+  background-color: #f7f5f6;
+  border-color: #f7f5f6; }
 
 .brand-hvr {
   color: #f7f5f6; }
@@ -281,6 +368,14 @@ video {
     width: 100%; }
   .about-text {
     font-size: calc(1.275rem + 0.5vw); } }
+
+@media only screen and (max-width: 990px) {
+  .carrusel {
+    display: none; } }
+
+@media only screen and (min-width: 991px) {
+  .carrusel-2 {
+    display: none; } }
 
 @media only screen and (max-width: 767px) {
   .navbar-nav {
@@ -320,3 +415,8 @@ video {
 @media only screen and (max-width: 568px) {
   .canciones__mus {
     flex-direction: column-reverse; } }
+
+/* ---------------RESPONSIVE-"IGLESIA"-------------------*/
+@media only screen and (max-width: 568px) {
+  .video-5 {
+    height: 30vh; } }
