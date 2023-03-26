@@ -1,0 +1,20 @@
+.nav__navig{
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.nav {
+    .container{
+        .nav__marca{
+            color:$color-blanco-sp;
+            font-size:25;
+            text-transform:uppercase;
+            font-weight: 700;
+            margin-right: 0;
+         }
+    }
+}
+.footer__ol{
+    text-decoration:none;
+}

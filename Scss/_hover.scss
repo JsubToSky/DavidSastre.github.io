@@ -1,0 +1,65 @@
+.nav .navbar__marca:focus,
+.nav .navbar__marca:hover{
+    color:$color-amarillo-sp;
+}
+.hvr-border-b {
+    border-bottom: 0; }
+  
+.hvr-border-b:hover {
+    border-bottom: 4px solid $color-amarillo-sp;
+    padding-bottom: 0.3rem; 
+}
+.btn-green-sp {
+  color: $color-blanco-sp;
+  background-color: $color-verde-sp;
+  border-color: $color-verde-sp;
+}
+.btn-green-sp:hover {
+  color: $color-negro;
+  background-color: $color-blanco-sp;    
+  border-color: $color-blanco-sp;
+}
+.btn-grey-sp {
+    color: $color-blanco-sp;
+    background-color: $color-gris-sp;
+    border-color: $color-gris-sp;
+  }
+.btn-grey-sp:hover {
+    color: $color-negro;
+    background-color: $color-marron-sp;    
+    border-color: $color-marron-sp;
+  }
+.btn-yellow-sp{
+    color:$color-negro-sp;
+    background-color: $color-amarillo-sp;
+    border-color:$color-amarillo-sp;
+}
+.btn-yellow-sp:hover{
+    background-color:#E5C568;
+    border-color:#E5C568;
+}
+.btn-beige-sp{
+    color:$color-negro;
+    background-color: $color-beige-sp;
+    border-color: $color-amarillo-sp;
+}
+.btn-beige-sp:hover{
+    background-color:#E5C568;
+    border-color:#E5C568;
+}
+.btn-black-sp {
+    color: $color-blanco-sp;
+    background-color: $color-negro-sp;
+    border-color: $color-negro-sp;
+  }
+.btn-black-sp:hover {
+    color: $color-negro;
+    background-color: $color-blanco-sp;    
+    border-color: $color-blanco-sp;
+  }
+.brand-hvr{
+    color: $color-blanco-sp;
+}
+.nav__marca:hover{
+    color: $color-beige-sp;
+}

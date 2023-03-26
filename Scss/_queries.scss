@@ -1,0 +1,120 @@
+@media only screen and (min-width: 768px) and (max-width:991px){
+    main{
+        .carrusel-2{
+            .carrusel__interior{
+                .carrusel__objeto{
+                    .carousel-caption {
+                        bottom:300px;
+                        p{
+                            width:$cien-porciento;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    .portfolio {
+        .container{
+            .row{
+                .col-12{
+                    .card{
+                        margin-bottom: 30px;  
+                        .card-body{
+                            .img-area {
+                                img{
+                                    width:$cien-porciento;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .about{
+        .container{
+            .row{
+                .col-lg-8{
+                    .about-text{
+                        font-size: calc(1.275rem + 0.5vw);
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:990px){
+    .carrusel{
+        display:none; 
+    }
+}
+@media only screen and (min-width:991px){
+    .carrusel-2{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align:center;
+    }
+    main{
+        .head{
+            div{
+                h1{
+                    font-size:3rem;
+                    text-align: center; 
+                }
+            }
+        }
+    } 
+
+    .carrusel__objeto{
+        .carrusel__texto{
+            bottom:125px;
+        
+            p{
+                width:$cien-porciento;
+                line-height:1.6;
+                font-size:12px;
+                a{
+                    padding:10px 15px; 
+                }
+            }
+        }
+    }
+}
+/* ----------------RESPONSIVE-"NOSOTROS?"----------------- */
+@media only screen and (max-width:767px) {
+    .head-nos{
+        .overlay{
+            display:flex;
+            align-items: center;
+            text-align: center; 
+            .h1-nos{
+                font-size:calc(3rem + 3.1vw);
+            } 
+        } 
+    }   
+}
+/* ---------------RESPONSIVE-"MÚSICA" ------------------*/
+@media only screen and (max-width:568px){
+    .container-fluid{
+        .canciones__mus{
+            flex-direction: column-reverse;
+        }
+    }
+}
+/* ---------------RESPONSIVE-"IGLESIA"-------------------*/
+@media only screen and (max-width:568px){
+    .container-fluid{
+        .video-5{
+            height:30vh;
+        }
+    }
+}

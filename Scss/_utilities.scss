@@ -1,0 +1,108 @@
+.font-solitreo {
+    font-family: "Solitreo" ; }
+    
+.font-sanspro {
+    font-family: "SourceSansPro" ; }
+
+.font-sanspro-b{
+    font-family:"SourceSansProBold";
+}
+.font-sanspro-sb{
+    font-family:"SourceSansProSB";
+}
+
+.font-sanspro-i{
+    font-family:"SourceSansProItalic";
+}
+
+.font-sanspro-l{
+    font-family:"SourceSansProLight";
+}
+.font-dancing{
+    font-family:"Dancing Script";
+}
+.font-noto{
+    font-family:"NotoSerif";
+}
+.font-abel{
+    font-family:"Abel";
+}
+.border-stroke-w{
+    -webkit-text-stroke: 1px $color-blanco-sp;
+}
+.border-brown-sp{
+    border: 3px solid $color-marron-sp;
+    border-color: $color-marron-sp;
+}
+.bg-white-sp{
+    background-color:$color-blanco-sp;
+}
+
+.bg-black-sp{
+    background-color: $color-negro-sp;
+}
+
+.bg-green-sp {
+    background-color:$color-verde-sp;
+}
+
+.bg-beige-sp{
+    background-color: $color-beige-sp;
+}
+
+.bg-yellow-sp{
+    background-color:$color-amarillo-sp;
+}
+.bg-brown-sp{
+    background-color: $color-marron-sp;
+}
+.bg-grey-sp{
+    background-color: $color-gris-sp;
+}
+.color-white-sp{
+    color: $color-blanco-sp;
+}
+
+.color-black-sp{
+    color: $color-negro-sp;
+}
+
+.color-green-sp{
+    color: $color-verde-sp;
+}
+
+.color-beige-sp{
+    color: $color-beige-sp;
+}
+
+.color-yellow-sp{
+    color: $color-amarillo-sp;
+}
+.color-brown-sp{
+    color: $color-marron-sp;
+}
+.color-red-yt{
+    color:$color-rojo-yt;
+}
+.color-pink-ig{
+    color:$color-rosado-ig;
+}
+.color-green-sptf{
+    color:$color-verde-sptf;
+}
+.section-padding{
+    padding:100px 0;
+}
+.fs-b{
+    font-size: calc(1.825rem + 2vw);
+}
+.fs-b-1{
+    font-size: calc(1.725rem + 1.8vw);
+}
+
+.fit-cover{
+    object-fit: $cover;
+}
+.fit-contain{
+    object-fit: contain;
+}

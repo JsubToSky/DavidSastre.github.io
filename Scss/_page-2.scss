@@ -1,0 +1,39 @@
+.head-nos{
+    background-image:url(../Assets/Images/fiesta-outside.png);
+    background-size: $cover;
+    height: 85vh;
+    min-height:80vh;
+    position:relative; 
+    color: $color-blanco-sp;
+    text-shadow: 2px 2px 2px $color-negro-sp;
+    .overlay{
+        .h1-nos{
+            font-size:calc(4rem + 1.1vw);
+        } 
+    }
+}
+.title-hr{  
+    border: 1px solid $color-negro;
+} 
+.story{
+    background-image: url("../Assets/Images/100-Iglesia-2.jpg");
+    background-size: $cover;
+    height: $cien-porciento;
+    min-height:80vh;
+    position:relative; 
+    .container{
+        .about-text{
+            .story__text-1{
+                background-color:rgba(29,29,27,0.6);
+            }
+        }
+        .row{
+            .about-text{
+                .story__text-2{
+                    background-color:rgba(29,29,27,0.6);
+                }
+            }
+        }
+    }
+    
+}
